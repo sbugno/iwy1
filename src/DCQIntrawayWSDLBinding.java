@@ -75,7 +75,7 @@ public class DCQIntrawayWSDLBinding
         try
         {
             java.net.URI uri = new java.net.URI(url);
-            if(uri.getScheme().equalsIgnoreCase("https"))
+            if("https".equalsIgnoreCase(uri.getScheme()))
             {
                 int port=uri.getPort()>0?uri.getPort():443;
                 String path=uri.getPath();
